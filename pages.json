@@ -1,0 +1,231 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	// "condition": { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式(list 的索引项)
+	// 	"list": [{
+	// 		"name": "test", //模式名称
+	// 		"path": "pages/componentsC/test/index", //启动页面，必选
+	// 		"query": "uuid=c4bba940-f69e-11ea-a419-6bafda9d095e&__id__=1" //启动参数，在页面的onLoad函数里面得到
+	// 	}]
+	// },
+	"pages": [{
+			"path": "pages/tabbar/index/index",
+			"style": {
+				"navigationBarTitleText": "%index.home%",
+				"navigationStyle":"custom"
+			}
+		},{
+			"path": "pages/userPages/login/login",
+			"style": {
+				"navigationBarTitleText": "App",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/tabbar/begin/begin",
+			"style": {
+				"navigationBarTitleText": "%index.begin%"
+			}
+		},
+		{
+			"path": "pages/tabbar/history/history",
+			"style": {
+				"navigationBarTitleText": "%index.order%",
+				"enablePullDownRefresh": true
+			}
+		}
+	    ,{
+            "path" : "pages/userPages/register/register",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"custom",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/richText/richText",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%home.txt4%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/richText/lates",
+		    "style" :                                                                                    
+		    {
+				"navigationStyle":"default",
+		        "navigationBarTitleText": "%home.txt8%",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/levelList/levelList",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%home.txt11%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/noticList/noticList",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt1%",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/userPages/userCenter/userCenter",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt2%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/noticDetail/noticDetail",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt3%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/userPages/userInfo/userInfo",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt4%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/payPassword/payPassword",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt5%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/password/password",
+            "style" :                                                                                    
+            {
+                "navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt6%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/withdraw/withdraw",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt7%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/deposit/deposit",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt8%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/walletLogs/walletLogs",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt9%",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/userPages/agreement/agreement",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt10%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/bindAccount/bindAccount",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt11%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/companyDesc/companyDesc",
+            "style" :                                                                                    
+            {
+				"navigationStyle":"default",
+                "navigationBarTitleText": "%navtitle.txt12%",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationStyle":"custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "App",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#242424",
+		"selectedColor": "#242424",
+		"backgroundColor": "#242424",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/tabbar/index/index",
+				"iconPath": "",
+				"selectedIconPath": "",
+				"text": "%index.home%"
+			},
+			{
+				"pagePath": "pages/tabbar/begin/begin",
+				"iconPath": "",
+				"selectedIconPath": "",
+				"text": "%index.begin%"
+			},
+			{
+				"pagePath": "pages/tabbar/history/history",
+				"iconPath": "",
+				"selectedIconPath": "",
+				"text": "%index.order%"
+			}
+		]
+	}
+}
